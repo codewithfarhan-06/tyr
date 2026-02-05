@@ -1,794 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farhan Khan | 3D Web App Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient-bg" aria-hidden="true">
+    <span class="orb orb--one"></span>
+    <span class="orb orb--two"></span>
+    <span class="orb orb--three"></span>
+  </div>
 
-+<!DOCTYPE html>
-+<html lang="en">
-+<head>
-+  <meta charset="UTF-8" />
-+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-+  <title>Farhan Khan | 3D Web App Portfolio</title>
-+  <link rel="preconnect" href="https://fonts.googleapis.com" />
-+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-+  <link
-+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-+    rel="stylesheet"
-+  />
-+  <link rel="stylesheet" href="styles.css" />
-+</head>
-+<body>
-+  <div class="ambient-bg" aria-hidden="true">
-+    <span class="orb orb--one"></span>
-+    <span class="orb orb--two"></span>
-+    <span class="orb orb--three"></span>
-+  </div>
-+
-+  <header class="nav">
-+    <div class="logo">FK 3D</div>
-+    <nav>
-+      <a href="#about">About</a>
-+      <a href="#projects">Projects</a>
-+      <a href="#skills">Skills</a>
-+      <a href="#contact">Contact</a>
-+    </nav>
-+    <button class="btn ghost" data-modal-target="login">Login</button>
-+  </header>
-+
-+  <main>
-+    <section class="hero" id="top">
-+      <div class="hero__content">
-+        <p class="eyebrow">3D Portfolio · Web App Developer</p>
-+        <h1>Hey, I’m Farhan Khan.</h1>
-+        <p class="lead">
-+          18-year-old web app developer, Python learner, and Class 10th A-levels student from
-+          Biratnagar, Sunsel Nepal. I love building immersive UI experiences with motion, depth,
-+          and delightful pop-ups.
-+        </p>
-+        <div class="hero__actions">
-+          <button class="btn" data-modal-target="profile">View Profile</button>
-+          <button class="btn ghost" data-modal-target="guest">Continue as Guest</button>
-+        </div>
-+        <div class="hero__stats">
-+          <div>
-+            <h3>12+</h3>
-+            <p>Animated UI experiments</p>
-+          </div>
-+          <div>
-+            <h3>4</h3>
-+            <p>Ongoing Python tracks</p>
-+          </div>
-+          <div>
-+            <h3>3</h3>
-+            <p>Featured 3D projects</p>
-+          </div>
-+        </div>
-+      </div>
-+
-+      <div class="hero__scene" aria-hidden="true">
-+        <div class="cube" id="cube">
-+          <div class="cube__face cube__face--front">3D</div>
-+          <div class="cube__face cube__face--back">UX</div>
-+          <div class="cube__face cube__face--right">JS</div>
-+          <div class="cube__face cube__face--left">PY</div>
-+          <div class="cube__face cube__face--top">UI</div>
-+          <div class="cube__face cube__face--bottom">VR</div>
-+        </div>
-+        <div class="floating-card">
-+          <div class="profile-icon">
-+            <span>FK</span>
-+          </div>
-+          <h4>Farhan Khan</h4>
-+          <p>Web App Developer</p>
-+          <button class="btn tiny" data-modal-target="sub">Open Sub Pop-up</button>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="about" id="about">
-+      <div class="section-title">
-+        <h2>About Me</h2>
-+        <p>Curious, fast-learning, and obsessed with interactive design.</p>
-+      </div>
-+      <div class="about__grid">
-+        <div class="glass-card">
-+          <h3>Bio Snapshot</h3>
-+          <p>
-+            I blend modern web technologies with cinematic motion. My focus is on 3D interfaces,
-+            playful micro-interactions, and clean full-stack logic. I’m currently deep-diving
-+            into Python automations and advanced front-end effects.
-+          </p>
-+          <button class="btn ghost" data-modal-target="details">More Details</button>
-+        </div>
-+        <div class="glass-card">
-+          <h3>Location</h3>
-+          <p>Biratnagar, Sunsel Nepal</p>
-+          <ul>
-+            <li>Open to internships & collabs</li>
-+            <li>Timezone: NPT (UTC +5:45)</li>
-+            <li>Looking for mentorship opportunities</li>
-+          </ul>
-+        </div>
-+        <div class="glass-card">
-+          <h3>What I Love</h3>
-+          <ul>
-+            <li>3D transforms & parallax scroll effects</li>
-+            <li>Custom pop-ups, modals, and alerts</li>
-+            <li>Clean APIs + reusable components</li>
-+          </ul>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="projects" id="projects">
-+      <div class="section-title">
-+        <h2>Featured Projects</h2>
-+        <p>Pick a repository and dive into the story behind the build.</p>
-+      </div>
-+      <div class="projects__grid">
-+        <article class="project-card" data-tilt>
-+          <h3>Sorry, Jana</h3>
-+          <p>A heartfelt web experience with cinematic animation layers and interactive replies.</p>
-+          <div class="tags">
-+            <span>HTML</span>
-+            <span>CSS 3D</span>
-+            <span>GSAP-style Motion</span>
-+          </div>
-+          <button class="btn tiny" data-modal-target="project1">Open Repo</button>
-+        </article>
-+        <article class="project-card" data-tilt>
-+          <h3>Anniversary Offers</h3>
-+          <p>A celebratory landing page featuring offer cards, timers, and glowing 3D badges.</p>
-+          <div class="tags">
-+            <span>Responsive</span>
-+            <span>Pop-ups</span>
-+            <span>CTA Funnels</span>
-+          </div>
-+          <button class="btn tiny" data-modal-target="project2">Open Repo</button>
-+        </article>
-+        <article class="project-card" data-tilt>
-+          <h3>GitHub Showcase</h3>
-+          <p>A curated repository spotlight with project metrics and animated readme previews.</p>
-+          <div class="tags">
-+            <span>Open Source</span>
-+            <span>API</span>
-+            <span>Profiles</span>
-+          </div>
-+          <button class="btn tiny" data-modal-target="project3">Select Repo</button>
-+        </article>
-+      </div>
-+    </section>
-+
-+    <section class="skills" id="skills">
-+      <div class="section-title">
-+        <h2>Skills & Focus</h2>
-+        <p>Keeping the toolkit sharp and expanding every semester.</p>
-+      </div>
-+      <div class="skills__grid">
-+        <div class="skill-card">
-+          <h4>Front-End</h4>
-+          <p>HTML · CSS · JavaScript · 3D transforms · Advanced transitions</p>
-+        </div>
-+        <div class="skill-card">
-+          <h4>Python Learning</h4>
-+          <p>Automation · Data handling · Beginner OOP · CLI tools</p>
-+        </div>
-+        <div class="skill-card">
-+          <h4>UX Motion</h4>
-+          <p>Parallax · Scroll choreography · Micro-interactions</p>
-+        </div>
-+        <div class="skill-card">
-+          <h4>Collaboration</h4>
-+          <p>Figma handoff · Rapid prototyping · Team feedback loops</p>
-+        </div>
-+      </div>
-+    </section>
-+
-+    <section class="contact" id="contact">
-+      <div class="section-title">
-+        <h2>Let’s Build Together</h2>
-+        <p>Send a message or open a pop-up to start a project.</p>
-+      </div>
-+      <div class="contact__grid">
-+        <div class="glass-card">
-+          <h3>Quick Contact</h3>
-+          <p>Email: farhan.khan@example.com</p>
-+          <p>GitHub: github.com/farhan-khan</p>
-+          <button class="btn" data-modal-target="contact">Send a Message</button>
-+        </div>
-+        <div class="glass-card">
-+          <h3>Availability</h3>
-+          <p>Weekdays after school · Weekends for larger builds</p>
-+          <button class="btn ghost" data-modal-target="subscribe">Subscribe to Updates</button>
-+        </div>
-+      </div>
-+    </section>
-+  </main>
-+
-+  <footer>
-+    <p>Designed in 3D by Farhan Khan · Biratnagar, Sunsel Nepal</p>
-+  </footer>
-+
-+  <div class="modal" id="modal-login" aria-hidden="true">
-+    <div class="modal__content">
-+      <button class="modal__close" data-close>×</button>
-+      <h3>Login Pop-up</h3>
-+      <p>Welcome back! Sign in to access the developer dashboard.</p>
-+      <input type="text" placeholder="Email" />
-+      <input type="password" placeholder="Password" />
-+      <button class="btn">Login</button>
-+    </div>
-+  </div>
-+
-+  <div class="modal" id="modal-guest" aria-hidden="true">
-+    <div class="modal__content">
-+      <button class="modal__close" data-close>×</button>
-+      <h3>Not Logged In</h3>
-+      <p>You’re browsing as a guest. Explore the portfolio and unlock previews.</p>
-+      <button class="btn ghost" data-modal-target="login">Log in now</button>
-+    </div>
-+  </div>
-+
-+  <div class="modal" id="modal-profile" aria-hidden="true">
-+    <div class="modal__content">
-+      <button class="modal__close" data-close>×</button>
-+      <h3>Profile Pop-up</h3>
-+      <p><strong>Name:</strong> Farhan Khan</p>
-+      <p><strong>Age:</strong> 18</p>
-+      <p><strong>Role:</strong> Web App Developer · Python Learner</p>
-+      <p><strong>Education:</strong> Class 10th A-levels student</p>
-+      <button class="btn tiny" data-modal-target="sub">Open Sub Pop-up</button>
-+    </div>
-+  </div>
-+
-+  <div class="modal" id="modal-sub" aria-hidden="true">
-+    <div class="modal__content">
-+      <button class="modal__close" data-close>×</button>
-+      <h3>Sub Pop-up</h3>
-+      <p>Stacked pop-ups, layered shadows, and smooth 3D transitions.</p>
-+      <button class="btn">Close & Continue</button>
-+    </div>
-+  </div>
-+
-+  <div class="modal" id="modal-details" aria-hidden="true">
-+    <div class="modal__content">
-+      <button class="modal__close" data-close>×</button>
-+      <h3>More Details</h3>
-+      <p>
-+        Passionate about creating memorable experiences. I experiment with cinematic lighting,
-+        3D motion, and modal flows that guide users step-by-step.
-+      </p>
-+    </div>
-+  </div>
-+
-+  <div class="modal" id="modal-project1" aria-hidden="true">
-+    <div class="modal__content">
-+      <button class="modal__close" data-close>×</button>
-+      <h3>Repository: Sorry, Jana</h3>
-+      <p>Feature highlights: apology flow, dynamic response cards, and 3D depth layers.</p>
-+      <button class="btn">View GitHub</button>
-+    </div>
-+  </div>
-+
-+  <div class="modal" id="modal-project2" aria-hidden="true">
-+    <div class="modal__content">
-+      <button class="modal__close" data-close>×</button>
-+      <h3>Repository: Anniversary Offers</h3>
-+      <p>Animated countdown timers, celebratory confetti, and offer pop-ups.</p>
-+      <button class="btn">View GitHub</button>
-+    </div>
-+  </div>
-+
-+  <div class="modal" id="modal-project3" aria-hidden="true">
-+    <div class="modal__content">
-+      <button class="modal__close" data-close>×</button>
-+      <h3>Repository: GitHub Showcase</h3>
-+      <p>Select a favorite repo to pin to the spotlight.</p>
-+      <div class="repo-list">
-+        <button class="btn ghost">Portfolio-3D</button>
-+        <button class="btn ghost">Interactive-UI-Lab</button>
-+        <button class="btn ghost">Python-Learning-Journal</button>
-+      </div>
-+    </div>
-+  </div>
-+
-+  <div class="modal" id="modal-contact" aria-hidden="true">
-+    <div class="modal__content">
-+      <button class="modal__close" data-close>×</button>
-+      <h3>Send a Message</h3>
-+      <input type="text" placeholder="Your Name" />
-+      <input type="email" placeholder="Email" />
-+      <textarea rows="4" placeholder="Tell me about your project..."></textarea>
-+      <button class="btn">Send</button>
-+    </div>
-+  </div>
-+
-+  <div class="modal" id="modal-subscribe" aria-hidden="true">
-+    <div class="modal__content">
-+      <button class="modal__close" data-close>×</button>
-+      <h3>Subscribe for Updates</h3>
-+      <p>Get notified when new 3D experiments ship.</p>
-+      <input type="email" placeholder="Email address" />
-+      <button class="btn">Subscribe</button>
-+    </div>
-+  </div>
-+
-+  <script src="script.js"></script>
-+</body>
-+</html>
+  <header class="nav">
+    <div class="logo">FK 3D</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn ghost" data-modal-target="login">Login</button>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__content">
+        <p class="eyebrow">3D Portfolio · Web App Developer</p>
+        <h1>Hey, I’m Farhan Khan.</h1>
+        <p class="lead">
+          18-year-old web app developer, Python learner, and Class 10th A-levels student from
+          Biratnagar, Sunsel Nepal. I love building immersive UI experiences with motion, depth,
+          and delightful pop-ups.
+        </p>
+        <div class="hero__actions">
+          <button class="btn" data-modal-target="profile">View Profile</button>
+          <button class="btn ghost" data-modal-target="guest">Continue as Guest</button>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <h3>12+</h3>
+            <p>Animated UI experiments</p>
+          </div>
+          <div>
+            <h3>4</h3>
+            <p>Ongoing Python tracks</p>
+          </div>
+          <div>
+            <h3>3</h3>
+            <p>Featured 3D projects</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scene" aria-hidden="true">
+        <div class="cube" id="cube">
+          <div class="cube__face cube__face--front">3D</div>
+          <div class="cube__face cube__face--back">UX</div>
+          <div class="cube__face cube__face--right">JS</div>
+          <div class="cube__face cube__face--left">PY</div>
+          <div class="cube__face cube__face--top">UI</div>
+          <div class="cube__face cube__face--bottom">VR</div>
+        </div>
+        <div class="floating-card">
+          <div class="profile-icon">
+            <span>FK</span>
+          </div>
+          <h4>Farhan Khan</h4>
+          <p>Web App Developer</p>
+          <button class="btn tiny" data-modal-target="sub">Open Sub Pop-up</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>Curious, fast-learning, and obsessed with interactive design.</p>
+      </div>
+      <div class="about__grid">
+        <div class="glass-card">
+          <h3>Bio Snapshot</h3>
+          <p>
+            I blend modern web technologies with cinematic motion. My focus is on 3D interfaces,
+            playful micro-interactions, and clean full-stack logic. I’m currently deep-diving
+            into Python automations and advanced front-end effects.
+          </p>
+          <button class="btn ghost" data-modal-target="details">More Details</button>
+        </div>
+        <div class="glass-card">
+          <h3>Location</h3>
+          <p>Biratnagar, Sunsel Nepal</p>
+          <ul>
+            <li>Open to internships & collabs</li>
+            <li>Timezone: NPT (UTC +5:45)</li>
+            <li>Looking for mentorship opportunities</li>
+          </ul>
+        </div>
+        <div class="glass-card">
+          <h3>What I Love</h3>
+          <ul>
+            <li>3D transforms & parallax scroll effects</li>
+            <li>Custom pop-ups, modals, and alerts</li>
+            <li>Clean APIs + reusable components</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p>Pick a repository and dive into the story behind the build.</p>
+      </div>
+      <div class="projects__grid">
+        <article class="project-card" data-tilt>
+          <h3>Sorry, Jana</h3>
+          <p>A heartfelt web experience with cinematic animation layers and interactive replies.</p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS 3D</span>
+            <span>GSAP-style Motion</span>
+          </div>
+          <button class="btn tiny" data-modal-target="project1">Open Repo</button>
+        </article>
+        <article class="project-card" data-tilt>
+          <h3>Anniversary Offers</h3>
+          <p>A celebratory landing page featuring offer cards, timers, and glowing 3D badges.</p>
+          <div class="tags">
+            <span>Responsive</span>
+            <span>Pop-ups</span>
+            <span>CTA Funnels</span>
+          </div>
+          <button class="btn tiny" data-modal-target="project2">Open Repo</button>
+        </article>
+        <article class="project-card" data-tilt>
+          <h3>GitHub Showcase</h3>
+          <p>A curated repository spotlight with project metrics and animated readme previews.</p>
+          <div class="tags">
+            <span>Open Source</span>
+            <span>API</span>
+            <span>Profiles</span>
+          </div>
+          <button class="btn tiny" data-modal-target="project3">Select Repo</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section-title">
+        <h2>Skills & Focus</h2>
+        <p>Keeping the toolkit sharp and expanding every semester.</p>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-card">
+          <h4>Front-End</h4>
+          <p>HTML · CSS · JavaScript · 3D transforms · Advanced transitions</p>
+        </div>
+        <div class="skill-card">
+          <h4>Python Learning</h4>
+          <p>Automation · Data handling · Beginner OOP · CLI tools</p>
+        </div>
+        <div class="skill-card">
+          <h4>UX Motion</h4>
+          <p>Parallax · Scroll choreography · Micro-interactions</p>
+        </div>
+        <div class="skill-card">
+          <h4>Collaboration</h4>
+          <p>Figma handoff · Rapid prototyping · Team feedback loops</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-title">
+        <h2>Let’s Build Together</h2>
+        <p>Send a message or open a pop-up to start a project.</p>
+      </div>
+      <div class="contact__grid">
+        <div class="glass-card">
+          <h3>Quick Contact</h3>
+          <p>Email: farhan.khan@example.com</p>
+          <p>GitHub: github.com/farhan-khan</p>
+          <button class="btn" data-modal-target="contact">Send a Message</button>
+        </div>
+        <div class="glass-card">
+          <h3>Availability</h3>
+          <p>Weekdays after school · Weekends for larger builds</p>
+          <button class="btn ghost" data-modal-target="subscribe">Subscribe to Updates</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designed in 3D by Farhan Khan · Biratnagar, Sunsel Nepal</p>
+  </footer>
+
+  <div class="modal" id="modal-login" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <h3>Login Pop-up</h3>
+      <p>Welcome back! Sign in to access the developer dashboard.</p>
+      <input type="text" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button class="btn">Login</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-guest" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <h3>Not Logged In</h3>
+      <p>You’re browsing as a guest. Explore the portfolio and unlock previews.</p>
+      <button class="btn ghost" data-modal-target="login">Log in now</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-profile" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <h3>Profile Pop-up</h3>
+      <p><strong>Name:</strong> Farhan Khan</p>
+      <p><strong>Age:</strong> 18</p>
+      <p><strong>Role:</strong> Web App Developer · Python Learner</p>
+      <p><strong>Education:</strong> Class 10th A-levels student</p>
+      <button class="btn tiny" data-modal-target="sub">Open Sub Pop-up</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-sub" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <h3>Sub Pop-up</h3>
+      <p>Stacked pop-ups, layered shadows, and smooth 3D transitions.</p>
+      <button class="btn">Close & Continue</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-details" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <h3>More Details</h3>
+      <p>
+        Passionate about creating memorable experiences. I experiment with cinematic lighting,
+        3D motion, and modal flows that guide users step-by-step.
+      </p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-project1" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <h3>Repository: Sorry, Jana</h3>
+      <p>Feature highlights: apology flow, dynamic response cards, and 3D depth layers.</p>
+      <button class="btn">View GitHub</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-project2" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <h3>Repository: Anniversary Offers</h3>
+      <p>Animated countdown timers, celebratory confetti, and offer pop-ups.</p>
+      <button class="btn">View GitHub</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-project3" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <h3>Repository: GitHub Showcase</h3>
+      <p>Select a favorite repo to pin to the spotlight.</p>
+      <div class="repo-list">
+        <button class="btn ghost">Portfolio-3D</button>
+        <button class="btn ghost">Interactive-UI-Lab</button>
+        <button class="btn ghost">Python-Learning-Journal</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-contact" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <h3>Send a Message</h3>
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Email" />
+      <textarea rows="4" placeholder="Tell me about your project..."></textarea>
+      <button class="btn">Send</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-subscribe" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <h3>Subscribe for Updates</h3>
+      <p>Get notified when new 3D experiments ship.</p>
+      <input type="email" placeholder="Email address" />
+      <button class="btn">Subscribe</button>
+   </div>
+ </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 diff --git a/script.js b/script.js
 new file mode 100644
 index 0000000000000000000000000000000000000000..647d846fc724dd9001a00ffa6e2b1890cdb7b7b3
 --- /dev/null
 +++ b/script.js
 @@ -0,0 +1,70 @@
-+const modalTriggers = document.querySelectorAll("[data-modal-target]");
-+const closeButtons = document.querySelectorAll("[data-close]");
-+const modals = document.querySelectorAll(".modal");
-+const tiltCards = document.querySelectorAll("[data-tilt]");
-+
-+const openModal = (name) => {
-+  const modal = document.getElementById(`modal-${name}`);
-+  if (modal) {
-+    modal.classList.add("is-open");
-+    modal.setAttribute("aria-hidden", "false");
-+  }
-+};
-+
-+const closeModal = (modal) => {
-+  modal.classList.remove("is-open");
-+  modal.setAttribute("aria-hidden", "true");
-+};
-+
-+modalTriggers.forEach((button) => {
-+  button.addEventListener("click", () => {
-+    const target = button.dataset.modalTarget;
-+    if (target) {
-+      openModal(target);
-+    }
-+  });
-+});
-+
-+closeButtons.forEach((button) => {
-+  button.addEventListener("click", (event) => {
-+    const modal = event.target.closest(".modal");
-+    if (modal) {
-+      closeModal(modal);
-+    }
-+  });
-+});
-+
-+modals.forEach((modal) => {
-+  modal.addEventListener("click", (event) => {
-+    if (event.target === modal) {
-+      closeModal(modal);
-+    }
-+  });
-+});
-+
-+document.addEventListener("keydown", (event) => {
-+  if (event.key === "Escape") {
-+    modals.forEach((modal) => {
-+      if (modal.classList.contains("is-open")) {
-+        closeModal(modal);
-+      }
-+    });
-+  }
-+});
-+
-+tiltCards.forEach((card) => {
-+  card.addEventListener("mousemove", (event) => {
-+    const rect = card.getBoundingClientRect();
-+    const x = event.clientX - rect.left;
-+    const y = event.clientY - rect.top;
-+    const centerX = rect.width / 2;
-+    const centerY = rect.height / 2;
-+    const rotateX = ((y - centerY) / centerY) * 6;
-+    const rotateY = ((x - centerX) / centerX) * -6;
-+    card.style.transform = `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-+  });
-+
-+  card.addEventListener("mouseleave", () => {
-+    card.style.transform = "translateY(0) rotateX(0) rotateY(0)";
-+  });
-+});
+const modalTriggers = document.querySelectorAll("[data-modal-target]");
+const closeButtons = document.querySelectorAll("[data-close]");
+const modals = document.querySelectorAll(".modal");
+const tiltCards = document.querySelectorAll("[data-tilt]");
+
+const openModal = (name) => {
+  const modal = document.getElementById(`modal-${name}`);
+  if (modal) {
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+  }
+};
+
+const closeModal = (modal) => {
+  modal.classList.remove("is-open");
+  modal.setAttribute("aria-hidden", "true");
+};
+
+modalTriggers.forEach((button) => {
+  button.addEventListener("click", () => {
+    const target = button.dataset.modalTarget;
+    if (target) {
+      openModal(target);
+    }
+  });
+});
+
+closeButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const modal = event.target.closest(".modal");
+    if (modal) {
+      closeModal(modal);
+    }
+  });
+});
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal(modal);
+    }
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    modals.forEach((modal) => {
+      if (modal.classList.contains("is-open")) {
+        closeModal(modal);
+      }
+    });
+  }
+});
+
+tiltCards.forEach((card) => {
+  card.addEventListener("mousemove", (event) => {
+    const rect = card.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * 6;
+    const rotateY = ((x - centerX) / centerX) * -6;
+    card.style.transform = `translateY(-8px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "translateY(0) rotateX(0) rotateY(0)";
+  });
+});
 diff --git a/styles.css b/styles.css
 new file mode 100644
 index 0000000000000000000000000000000000000000..fd7e3eb59327e811b6cc69c2d27266e46e6d69f6
 --- /dev/null
 +++ b/styles.css
 @@ -0,0 +1,395 @@
-+:root {
-+  color-scheme: dark;
-+  --bg: #0c0f1f;
-+  --card: rgba(17, 24, 46, 0.65);
-+  --accent: #7c5cff;
-+  --accent-bright: #9df2ff;
-+  --text: #f5f7ff;
-+  --muted: #b9c2ff;
-+  --shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
-+}
-+
-+* {
-+  box-sizing: border-box;
-+  margin: 0;
-+  padding: 0;
-+  font-family: "Space Grotesk", sans-serif;
-+}
-+
-+body {
-+  background: radial-gradient(circle at top, #1a1f3f, #0a0d1b 60%);
-+  color: var(--text);
-+  min-height: 100vh;
-+  overflow-x: hidden;
-+}
-+
-+.ambient-bg {
-+  position: fixed;
-+  inset: 0;
-+  pointer-events: none;
-+  z-index: -1;
-+}
-+
-+.orb {
-+  position: absolute;
-+  width: 300px;
-+  height: 300px;
-+  border-radius: 50%;
-+  filter: blur(0px);
-+  opacity: 0.45;
-+  mix-blend-mode: screen;
-+  animation: float 12s ease-in-out infinite;
-+}
-+
-+.orb--one {
-+  background: radial-gradient(circle, #5f7bff, transparent 60%);
-+  top: -60px;
-+  left: -40px;
-+}
-+
-+.orb--two {
-+  background: radial-gradient(circle, #8bffd4, transparent 60%);
-+  bottom: -80px;
-+  right: -40px;
-+  animation-delay: 2s;
-+}
-+
-+.orb--three {
-+  background: radial-gradient(circle, #f08bff, transparent 60%);
-+  top: 30%;
-+  right: 20%;
-+  animation-delay: 4s;
-+}
-+
-+.nav {
-+  display: flex;
-+  justify-content: space-between;
-+  align-items: center;
-+  padding: 24px 8vw;
-+  position: sticky;
-+  top: 0;
-+  backdrop-filter: blur(16px);
-+  background: rgba(7, 9, 20, 0.7);
-+  z-index: 10;
-+}
-+
-+.nav a {
-+  margin: 0 12px;
-+  text-decoration: none;
-+  color: var(--muted);
-+  transition: color 0.3s ease;
-+}
-+
-+.nav a:hover {
-+  color: var(--text);
-+}
-+
-+.logo {
-+  font-weight: 700;
-+  letter-spacing: 2px;
-+}
-+
-+main {
-+  display: flex;
-+  flex-direction: column;
-+  gap: 96px;
-+  padding: 40px 8vw 120px;
-+}
-+
-+.hero {
-+  display: grid;
-+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-+  gap: 48px;
-+  align-items: center;
-+}
-+
-+.eyebrow {
-+  text-transform: uppercase;
-+  letter-spacing: 3px;
-+  color: var(--accent-bright);
-+  font-size: 0.8rem;
-+  margin-bottom: 16px;
-+}
-+
-+.hero h1 {
-+  font-size: clamp(2.4rem, 4vw, 3.8rem);
-+  margin-bottom: 16px;
-+}
-+
-+.lead {
-+  color: var(--muted);
-+  line-height: 1.7;
-+  margin-bottom: 24px;
-+}
-+
-+.hero__actions {
-+  display: flex;
-+  flex-wrap: wrap;
-+  gap: 16px;
-+  margin-bottom: 24px;
-+}
-+
-+.hero__stats {
-+  display: grid;
-+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-+  gap: 16px;
-+}
-+
-+.hero__stats div {
-+  background: var(--card);
-+  padding: 16px;
-+  border-radius: 16px;
-+  box-shadow: var(--shadow);
-+}
-+
-+.hero__stats h3 {
-+  font-size: 1.5rem;
-+}
-+
-+.hero__scene {
-+  position: relative;
-+  perspective: 1000px;
-+  height: 400px;
-+  display: grid;
-+  place-items: center;
-+}
-+
-+.cube {
-+  position: absolute;
-+  width: 160px;
-+  height: 160px;
-+  transform-style: preserve-3d;
-+  animation: spin 12s linear infinite;
-+}
-+
-+.cube__face {
-+  position: absolute;
-+  width: 160px;
-+  height: 160px;
-+  background: rgba(124, 92, 255, 0.2);
-+  border: 1px solid rgba(157, 242, 255, 0.5);
-+  display: grid;
-+  place-items: center;
-+  font-weight: 700;
-+  font-size: 1.2rem;
-+  box-shadow: 0 0 25px rgba(124, 92, 255, 0.4);
-+}
-+
-+.cube__face--front { transform: translateZ(80px); }
-+.cube__face--back { transform: rotateY(180deg) translateZ(80px); }
-+.cube__face--right { transform: rotateY(90deg) translateZ(80px); }
-+.cube__face--left { transform: rotateY(-90deg) translateZ(80px); }
-+.cube__face--top { transform: rotateX(90deg) translateZ(80px); }
-+.cube__face--bottom { transform: rotateX(-90deg) translateZ(80px); }
-+
-+.floating-card {
-+  position: absolute;
-+  right: 10%;
-+  bottom: 0;
-+  background: var(--card);
-+  padding: 20px;
-+  border-radius: 20px;
-+  box-shadow: var(--shadow);
-+  transform: translateZ(40px);
-+  animation: float 6s ease-in-out infinite;
-+}
-+
-+.profile-icon {
-+  width: 56px;
-+  height: 56px;
-+  border-radius: 50%;
-+  background: linear-gradient(135deg, #7c5cff, #9df2ff);
-+  display: grid;
-+  place-items: center;
-+  font-weight: 700;
-+  margin-bottom: 12px;
-+  color: #0b0d1b;
-+}
-+
-+.section-title {
-+  margin-bottom: 32px;
-+}
-+
-+.section-title h2 {
-+  font-size: clamp(2rem, 3vw, 2.8rem);
-+  margin-bottom: 8px;
-+}
-+
-+.section-title p {
-+  color: var(--muted);
-+}
-+
-+.about__grid,
-+.projects__grid,
-+.skills__grid,
-+.contact__grid {
-+  display: grid;
-+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-+  gap: 24px;
-+}
-+
-+.glass-card,
-+.project-card,
-+.skill-card {
-+  background: var(--card);
-+  padding: 24px;
-+  border-radius: 20px;
-+  box-shadow: var(--shadow);
-+  border: 1px solid rgba(124, 92, 255, 0.2);
-+  transform-style: preserve-3d;
-+  transition: transform 0.4s ease, box-shadow 0.4s ease;
-+}
-+
-+.project-card:hover,
-+.glass-card:hover,
-+.skill-card:hover {
-+  transform: translateY(-8px) rotateX(4deg) rotateY(-4deg);
-+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-+}
-+
-+.tags {
-+  display: flex;
-+  flex-wrap: wrap;
-+  gap: 8px;
-+  margin: 16px 0;
-+}
-+
-+.tags span {
-+  padding: 4px 10px;
-+  border-radius: 999px;
-+  background: rgba(157, 242, 255, 0.15);
-+  font-size: 0.8rem;
-+}
-+
-+.btn {
-+  background: var(--accent);
-+  color: #fff;
-+  border: none;
-+  padding: 12px 20px;
-+  border-radius: 999px;
-+  cursor: pointer;
-+  transition: transform 0.3s ease, box-shadow 0.3s ease;
-+  box-shadow: 0 10px 20px rgba(124, 92, 255, 0.3);
-+}
-+
-+.btn:hover {
-+  transform: translateY(-2px) scale(1.02);
-+  box-shadow: 0 14px 24px rgba(124, 92, 255, 0.45);
-+}
-+
-+.btn.ghost {
-+  background: transparent;
-+  border: 1px solid rgba(124, 92, 255, 0.7);
-+  color: var(--text);
-+  box-shadow: none;
-+}
-+
-+.btn.tiny {
-+  padding: 6px 14px;
-+  font-size: 0.8rem;
-+}
-+
-+footer {
-+  text-align: center;
-+  padding: 32px;
-+  color: var(--muted);
-+}
-+
-+.modal {
-+  position: fixed;
-+  inset: 0;
-+  display: flex;
-+  align-items: center;
-+  justify-content: center;
-+  background: rgba(6, 9, 20, 0.8);
-+  opacity: 0;
-+  pointer-events: none;
-+  transition: opacity 0.3s ease;
-+  z-index: 20;
-+}
-+
-+.modal.is-open {
-+  opacity: 1;
-+  pointer-events: auto;
-+}
-+
-+.modal__content {
-+  background: #151a33;
-+  padding: 28px;
-+  border-radius: 20px;
-+  width: min(420px, 90vw);
-+  box-shadow: var(--shadow);
-+  position: relative;
-+  animation: pop 0.4s ease;
-+}
-+
-+.modal__content input,
-+.modal__content textarea {
-+  width: 100%;
-+  padding: 10px 12px;
-+  margin: 10px 0;
-+  border-radius: 12px;
-+  border: none;
-+  background: rgba(255, 255, 255, 0.05);
-+  color: var(--text);
-+}
-+
-+.modal__close {
-+  position: absolute;
-+  top: 12px;
-+  right: 14px;
-+  background: transparent;
-+  border: none;
-+  color: var(--muted);
-+  font-size: 1.4rem;
-+  cursor: pointer;
-+}
-+
-+.repo-list {
-+  display: flex;
-+  flex-direction: column;
-+  gap: 10px;
-+  margin-top: 12px;
-+}
-+
-+@keyframes spin {
-+  from {
-+    transform: rotateX(0deg) rotateY(0deg);
-+  }
-+  to {
-+    transform: rotateX(360deg) rotateY(360deg);
-+  }
-+}
-+
-+@keyframes float {
-+  0%,
-+  100% {
-+    transform: translateY(0px);
-+  }
-+  50% {
-+    transform: translateY(-14px);
-+  }
-+}
-+
-+@keyframes pop {
-+  from {
-+    transform: scale(0.9);
-+    opacity: 0;
-+  }
-+  to {
-+    transform: scale(1);
-+    opacity: 1;
-+  }
-+}
-+
-+@media (max-width: 768px) {
-+  .nav {
-+    flex-direction: column;
-+    gap: 12px;
-+  }
-+
-+  .floating-card {
-+    position: static;
-+    margin-top: 24px;
-+  }
-+}
- 
-EOF
-)
+:root {
+  color-scheme: dark;
+  --bg: #0c0f1f;
+  --card: rgba(17, 24, 46, 0.65);
+  --accent: #7c5cff;
+  --accent-bright: #9df2ff;
+  --text: #f5f7ff;
+  --muted: #b9c2ff;
+  --shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1a1f3f, #0a0d1b 60%);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.ambient-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.orb {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(0px);
+  opacity: 0.45;
+  mix-blend-mode: screen;
+  animation: float 12s ease-in-out infinite;
+}
+
+.orb--one {
+  background: radial-gradient(circle, #5f7bff, transparent 60%);
+  top: -60px;
+  left: -40px;
+}
+
+.orb--two {
+  background: radial-gradient(circle, #8bffd4, transparent 60%);
+  bottom: -80px;
+  right: -40px;
+  animation-delay: 2s;
+}
+
+.orb--three {
+  background: radial-gradient(circle, #f08bff, transparent 60%);
+  top: 30%;
+  right: 20%;
+  animation-delay: 4s;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8vw;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(16px);
+  background: rgba(7, 9, 20, 0.7);
+  z-index: 10;
+}
+
+.nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--text);
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  padding: 40px 8vw 120px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 48px;
+  align-items: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accent-bright);
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  margin-bottom: 16px;
+}
+
+.lead {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.hero__stats div {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.hero__stats h3 {
+  font-size: 1.5rem;
+}
+
+.hero__scene {
+  position: relative;
+  perspective: 1000px;
+  height: 400px;
+  display: grid;
+  place-items: center;
+}
+
+.cube {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  transform-style: preserve-3d;
+  animation: spin 12s linear infinite;
+}
+
+.cube__face {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: rgba(124, 92, 255, 0.2);
+  border: 1px solid rgba(157, 242, 255, 0.5);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 0 25px rgba(124, 92, 255, 0.4);
+}
+
+.cube__face--front { transform: translateZ(80px); }
+.cube__face--back { transform: rotateY(180deg) translateZ(80px); }
+.cube__face--right { transform: rotateY(90deg) translateZ(80px); }
+.cube__face--left { transform: rotateY(-90deg) translateZ(80px); }
+.cube__face--top { transform: rotateX(90deg) translateZ(80px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(80px); }
+
+.floating-card {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  transform: translateZ(40px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.profile-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+ background: linear-gradient(135deg, #7c5cff, #9df2ff);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0b0d1b;
+}
+
+.section-title {
+  margin-bottom: 32px;
+}
+
+.section-title h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  margin-bottom: 8px;
+}
+
+.section-title p {
+  color: var(--muted);
+}
+
+.about__grid,
+.projects__grid,
+.skills__grid,
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.glass-card,
+.project-card,
+.skill-card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(124, 92, 255, 0.2);
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover,
+.glass-card:hover,
+.skill-card:hover {
+  transform: translateY(-8px) rotateX(4deg) rotateY(-4deg);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.tags span {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(157, 242, 255, 0.15);
+  font-size: 0.8rem;
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(124, 92, 255, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 24px rgba(124, 92, 255, 0.45);
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(124, 92, 255, 0.7);
+  color: var(--text);
+  box-shadow: none;
+}
+
+.btn.tiny {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+}
+
+footer {
+  text-align: center;
+  padding: 32px;
+  color: var(--muted);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(6, 9, 20, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+}
+
+.modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__content {
+  background: #151a33;
+  padding: 28px;
+  border-radius: 20px;
+  width: min(420px, 90vw);
+  box-shadow: var(--shadow);
+  position: relative;
+  animation: pop 0.4s ease;
+}
+
+.modal__content input,
+.modal__content textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+}
+
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.repo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+   gap: 12px;
+  }
+
+  .floating-card {
+    position: static;
+    margin-top: 24px;
+  }
+}
